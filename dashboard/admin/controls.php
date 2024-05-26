@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'admin') {
+  header('Location: ../login.php');
+  exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,14 +31,20 @@
 			<span class="text">AdminHub</span>
 		</a>
 		<ul class="side-menu top">
-			<li class="active">
-				<a href="../admin/home.html">
+			<li>
+				<a href="../admin/home.php">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
 				</a>
 			</li>
+            <li class="active">
+				<a href="../admin/controls.php">
+                <i class='bx bxs-group' ></i>
+					<span class="text">User Control</span>
+				</a>
+			</li>
 			<li>
-				<a href="../admin/profile.html">
+				<a href="../admin/profile.php">
 					<i class='bx bxs-user-circle'></i>
 					<span class="text">Profile</span>
 				</a>
@@ -39,7 +52,7 @@
 		</ul>
 		<ul class="side-menu">
 			<li>
-				<a href="#" class="logout">
+				<a href="../../forms/logout_con.php" class="logout">
 					<i class='bx bxs-log-out-circle' ></i>
 					<span class="text">Logout</span>
 				</a>
@@ -64,7 +77,7 @@
 			</form>
 			<input type="checkbox" id="switch-mode" hidden>
 			<label for="switch-mode" class="switch-mode"></label>
-			<a href="../admin/profile.html" class="profile">
+			<a href="../admin/profile.php" class="profile">
 				<img src="../../assets/img/profile_icon.png">
 			</a>
 		</nav>
@@ -74,14 +87,14 @@
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1>Dashboard</h1>
+					<h1>User Control</h1>
 					<ul class="breadcrumb">
 						<li>
-							<a href="#">Dashboard</a>
+							<a href="#">User Control</a>
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>
-							<a class="active" href="../admin/home.html">Home</a>
+							<a class="active" href="../admin/home.php">Home</a>
 						</li>
 					</ul>
 				</div>
@@ -114,7 +127,7 @@
                                     <td>Last Name</td>
                                     <td>Email Name</td>
 									<td>Admin</td>
-                                    <td><a href=""><span class="status pending">Delete</span></a></td>
+                                    <td><a href=""><span class="status pending">Approve</span></a></td>
                                 </tr>
                             </tbody>
                         </table>

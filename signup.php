@@ -1,3 +1,6 @@
+<?php
+session_start(); // Start the session
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +9,6 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>TusokTracker</title>
-  <!--Automated Street Food Pricing System-->
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -27,13 +29,12 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+  <header id="header" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
@@ -42,13 +43,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <li class="dropdown"><a href="#"><span>Portal</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="login.php">Login</a></li>
               <li><a href="signup.php">Signup</a></li>
-              <li><a href="signup.php">Forgot Password</a></li>
+              <li><a href="forgot_password.php">Forgot Password</a></li>
             </ul>
           </li>
         </ul>
@@ -58,79 +59,74 @@
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-          <div data-aos="zoom-out">
-            <h1>All i can see your <span>Tusok</span></h1>
-            <h2>an Automated Street Food Pricing System</h2>
-            <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-          <img src="assets/img/tusok_icon_2.png" class="img-fluid animated" alt="">
-        </div>
-      </div>
-    </div>
-
-    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-      <defs>
-        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-      </defs>
-      <g class="wave1">
-        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-      </g>
-      <g class="wave2">
-        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-      </g>
-      <g class="wave3">
-        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-      </g>
-    </svg>
-
-  </section><!-- End Hero -->
-
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container-fluid">
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
 
-        <div class="row">
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right"></div>
-
-          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-            <h3>About TusokTracker</h3>
-            <p>"TusokTracker" is an innovative system designed to automate the pricing of street food. Developed by a dedicated team of BSIT students from Pateros Technological College, this application aims to revolutionize the way street food vendors manage their pricing, ensuring accuracy and efficiency. By leveraging modern technology, "TusokTracker" simplifies the process for vendors, allowing them to focus on delivering delicious food to their customers while maintaining fair and dynamic pricing. This system not only benefits vendors but also enhances the overall experience for street food enthusiasts.</p>
-
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon"><i class='bx bx-purchase-tag-alt'></i></div>
-              <h4 class="title"><a href="">Dynamic Pricing Management</a></h4>
-              <p class="description">"TusokTracker" enables street food vendors to automatically adjust their prices based on real-time factors such as demand, time of day, and ingredient costs. This ensures that pricing remains competitive and fair, maximizing profitability while maintaining customer satisfaction.</p>
-            </div>
-
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon"><i class='bx bx-notepad'></i></div>
-              <h4 class="title"><a href="">Inventory Tracking and Management</a></h4>
-              <p class="description">With "TusokTracker," vendors can effortlessly monitor their inventory levels, receive alerts when supplies are low, and track usage trends. This helps in minimizing waste, optimizing stock, and ensuring that popular items are always available for customers.</p>
-            </div>
-
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon"><i class='bx bx-objects-vertical-bottom'></i></div>
-              <h4 class="title"><a href="">Sales Analytics and Reporting</a></h4>
-              <p class="description">"TusokTracker" provides detailed sales reports and analytics, offering vendors valuable insights into their business performance. By analyzing sales data, vendors can identify best-selling items, peak selling times, and customer preferences, allowing them to make informed decisions and strategies for business growth.</p>
-            </div>
-
-          </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Signup Page</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Signup Page</li>
+          </ol>
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Breadcrumbs Section -->
+
+    <!-- ======= Login Section ======= -->
+    <section id="signup" class="contact">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Portal</h2>
+          <p>Signup</p>
+        </div>
+        <div class="col-lg-12 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+
+          <form method="post" action="forms/signup_con.php" class="php-email-form">
+            <div class="row">
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="first_name" placeholder="First name" required>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="last_name" placeholder="Last name" required>
+            </div>
+            <div class="form-group mt-3">
+              <input type="email" class="form-control" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group mt-3 pass">
+              <input type="password" class="form-control" name="password" placeholder="Password" required>
+              <i class="bi bi-eye-slash" id="togglePassword1"></i>
+            </div>
+            <div class="form-group mt-3 pass">
+              <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required>
+              <i class="bi bi-eye-slash" id="togglePassword2"></i>
+            </div>
+            <div class="my-3">
+              <!-- Validation message section -->
+              <?php
+              // Check if there are any error messages
+              if (isset($_SESSION['error'])) {
+                echo '<div class="error_message">' . $_SESSION['error'] . '</div>';
+                unset($_SESSION['error']); // Clear the error message
+              }
+
+              // Check if there are any success messages
+              if (isset($_SESSION['success'])) {
+                echo '<div class="success_message">' . $_SESSION['success'] . '</div>';
+                unset($_SESSION['success']); // Clear the success message
+              }
+              ?>
+            </div>
+            <div class="text-center"><button type="submit">Signup</button></div>
+          </form>
+
+        </div>
+      </div>
+    </section><!-- End Login Section -->
 
   </main><!-- End #main -->
 
@@ -145,7 +141,7 @@
               <h3>TusokTracker</h3>
               <p class="pb-3"><em>an Automated Street Food Pricing System</em></p>
               <p>
-                Pateros City, Philippines<br><br>
+                Makati City, Philippines<br><br>
                 <strong>Phone:</strong> +63 9111111111<br>
                 <strong>Email:</strong> tusoktracker@gmail.com<br>
               </p>
@@ -162,8 +158,8 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html#about">About us</a></li>
             </ul>
           </div>
 

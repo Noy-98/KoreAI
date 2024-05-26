@@ -13,7 +13,7 @@
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
 	<link rel="stylesheet" href="../../assets/css/dashboard.css">
-    <link rel="stylesheet" href="../../assets/css/home.css">
+    <link href="../../assets/css/profile.css" rel="stylesheet">
 </head>
 <body>
 
@@ -25,26 +25,26 @@
 			<span class="text">UserHub</span>
 		</a>
 		<ul class="side-menu top">
-			<li class="active">
-				<a href="../user/home.html">
+			<li>
+				<a href="../user/home.php">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
 				</a>
 			</li>
 			<li>
-				<a href="../user/products.html">
+				<a href="../user/products.php">
 					<i class='bx bxs-cart-add'></i>
 					<span class="text">Products</span>
 				</a>
 			</li>
-            <li>
-				<a href="../user/automation.html">
+            <li class="active">
+				<a href="../user/automation.php">
 					<i class='bx bxs-calculator'></i>
 					<span class="text">Automation</span>
 				</a>
 			</li>
 			<li>
-				<a href="../user/profile.html">
+				<a href="../user/profile.php">
 					<i class='bx bxs-user-circle'></i>
 					<span class="text">Profile</span>
 				</a>
@@ -77,7 +77,7 @@
 			</form>
 			<input type="checkbox" id="switch-mode" hidden>
 			<label for="switch-mode" class="switch-mode"></label>
-			<a href="../user/profile.html" class="profile">
+			<a href="../user/profile.php" class="profile">
 				<img src="../../assets/img/profile_icon.png">
 			</a>
 		</nav>
@@ -87,20 +87,59 @@
 		<main>
 			<div class="head-title">
 				<div class="left">
-					<h1>Dashboard</h1>
+					<h1>Automation Dashboard</h1>
 					<ul class="breadcrumb">
 						<li>
 							<a href="#">Dashboard</a>
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>
-							<a class="active" href="../user/home.html">Home</a>
+							<a class="active" href="../user/home.php">Home</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 
-			     
+             <!-- Page content -->
+             <div class="table-data">
+				<div class="todo">
+					<div class="order">
+                        <div class="head">
+                            <h3>User Tusok List</h3>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product Picture</th>
+                                    <th>User Color Code</th>
+                                    <th>Product Name</th>
+                                    <th>Product Price</th>
+                                    <th>Product Pcs</th>
+                                    <th>Product Color Code</th>
+                                    <th>Total Price</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="../../assets/img/tusok_icon.png">
+                                    </td>
+                                    <td>User Color Code</td>
+                                    <td>Product Name</td>
+                                    <td>Product Price</td>
+                                    <td>Product Pcs</td>
+                                    <td>Product Color Code</td>
+                                    <td>Total Price</td>
+                                    <td><a href=""><span class="status pending">Delete</span></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+				</div>
+			</div>
+
+             	     
 		</main>
 		<!-- MAIN -->
 	</section>

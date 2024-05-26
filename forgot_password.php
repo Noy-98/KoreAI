@@ -1,3 +1,6 @@
+<?php
+session_start(); // Start the session
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,8 +47,9 @@
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <li class="dropdown"><a href="#"><span>Portal</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="signup.html">Signup</a></li>
+              <li><a href="login.php">Login</a></li>
+              <li><a href="signup.php">Signup</a></li>
+              <li><a href="forgot_password.php">Forgot Password</a></li>
             </ul>
           </li>
         </ul>
@@ -62,10 +66,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Login Page</h2>
+          <h2>Forgot Password Page</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Login Page</li>
+            <li>Forgot Password Page</li>
           </ol>
         </div>
 
@@ -77,26 +81,33 @@
       <div class="container">
         <div class="section-title" data-aos="fade-up">
           <h2>Portal</h2>
-          <p>Login</p>
+          <p>Forgot Password</p>
         </div>
           <div class="col-lg-12 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
 
-            <form action="" method="post" role="form" class="php-email-form">
+            <form method="post" action="" class="php-email-form">
               <div class="row">
               </div>
               <div class="form-group mt-3">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-              </div>
-              <div class="form-group mt-3 pass">
-                <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
-                <i class="bi bi-eye-slash" id="togglePassword1"></i>
+                <input type="email" class="form-control" name="email" placeholder="Email" required>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Login Successfully!</div>
+              <!-- Validation message section -->
+              <?php
+              // Check if there are any error messages
+              if (isset($_SESSION['error'])) {
+                echo '<div class="error_message">' . $_SESSION['error'] . '</div>';
+                unset($_SESSION['error']); // Clear the error message
+              }
+
+              // Check if there are any success messages
+              if (isset($_SESSION['success'])) {
+                echo '<div class="success_message">' . $_SESSION['success'] . '</div>';
+                unset($_SESSION['success']); // Clear the success message
+              }
+              ?>
               </div>
-              <div class="text-center"><button type="submit">Login</button></div>
+              <div class="text-center"><button type="submit">Verify</button></div>
             </form>
 
           </div>

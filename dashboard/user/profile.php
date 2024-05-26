@@ -23,17 +23,29 @@
 	<section id="sidebar">
 		<a href="#" class="brand">
 			<i class='bx bxs-store'></i>
-			<span class="text">AdminHub</span>
+			<span class="text">UserHub</span>
 		</a>
 		<ul class="side-menu top">
 			<li>
-				<a href="../admin/home.html">
+				<a href="../user/home.php">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
 				</a>
 			</li>
-            <li class="active">
-				<a href="../admin/profile.html">
+            <li>
+				<a href="../user/products.php">
+					<i class='bx bxs-cart-add'></i>
+					<span class="text">Products</span>
+				</a>
+			</li>
+            <li>
+				<a href="../user/automation.php">
+					<i class='bx bxs-calculator'></i>
+					<span class="text">Automation</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="../user/profile.php">
 					<i class='bx bxs-user-circle'></i>
 					<span class="text">Profile</span>
 				</a>
@@ -66,7 +78,7 @@
 			</form>
 			<input type="checkbox" id="switch-mode" hidden>
 			<label for="switch-mode" class="switch-mode"></label>
-			<a href="../admin/profile.html" class="profile">
+			<a href="../user/profile.php" class="profile">
 				<img src="../../assets/img/profile_icon.png">
 			</a>
 		</nav>
@@ -83,7 +95,7 @@
 						</li>
 						<li><i class='bx bx-chevron-right' ></i></li>
 						<li>
-							<a class="active" href="../admin/home.html">Home</a>
+							<a class="active" href="../user/home.php">Home</a>
 						</li>
 					</ul>
 				</div>
@@ -238,6 +250,9 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-sm btn-primary" type="submit">Submit</button>
+                                      </div>
                                 </div>
                             </form>
                         </div>
