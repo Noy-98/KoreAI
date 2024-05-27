@@ -1,5 +1,11 @@
 <?php
 session_start(); // Start the session
+
+// Assuming user_id is passed as a query parameter
+if (isset($_GET['user_id'])) {
+    $_SESSION['user_id'] = $_GET['user_id'];
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -85,7 +91,7 @@ session_start(); // Start the session
         </div>
           <div class="col-lg-12 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
 
-            <form method="post" action="" class="php-email-form">
+            <form method="post" action="forms/change_password_con.php" class="php-email-form">
               <div class="row">
               </div>
               <div class="form-group mt-3 pass">

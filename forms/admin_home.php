@@ -18,15 +18,15 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
                 <td>
-                    <img src='{$row['profile_picture']}'>
-                    <p>{$row['username']}</p>
+                    <img src='".htmlspecialchars($row['profile_picture'])."' alt='Profile Picture'>
+                    <p>".htmlspecialchars($row['username'])."</p>
                 </td>
-                <td>{$row['first_name']}</td>
-                <td>{$row['last_name']}</td>
-                <td>{$row['email']}</td>
-                <td>{$row['user_type']}</td>
+                <td>".htmlspecialchars($row['first_name'])."</td>
+                <td>".htmlspecialchars($row['last_name'])."</td>
+                <td>".htmlspecialchars($row['email'])."</td>
+                <td>".htmlspecialchars($row['user_type'])."</td>
                 <td>
-                    <a href='../../forms/admin_delete_user.php?email={$row['email']}' onclick='return confirm(\"Are you sure you want to delete this user?\");'>
+                    <a href='../../forms/admin_delete_user.php?email=".urlencode($row['email'])."' onclick='return confirm(\"Are you sure you want to delete this user?\");'>
                         <span class='status pending'>Delete</span>
                     </a>
                 </td>

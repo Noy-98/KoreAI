@@ -4,6 +4,17 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'admin') {
 	header('Location: ../../login.php');
 	exit();
 }
+require_once __DIR__ . '/../../forms/db_con.php'; // Adjust the path if necessary
+
+// Fetch user data from the database
+$user_id = $_SESSION['user_id'];
+$sql = "SELECT profile_picture FROM users WHERE id = ?";
+$stmt = $db_con->prepare($sql);
+$stmt->bind_param("i", $user_id);
+$stmt->execute();
+$result = $stmt->get_result();
+$user_data = $result->fetch_assoc();
+$stmt->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -80,7 +91,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'admin') {
 			<input type="checkbox" id="switch-mode" hidden>
 			<label for="switch-mode" class="switch-mode"></label>
 			<a href="../admin/profile.php" class="profile">
-				<img src="../../assets/img/profile_icon.png">
+				<img src="<?php echo htmlspecialchars($user_data['profile_picture']); ?>" alt="Profile Picture">
 			</a>
 		</nav>
 		<!-- NAVBAR -->

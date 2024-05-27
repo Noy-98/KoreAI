@@ -85,7 +85,7 @@ session_start(); // Start the session
         </div>
           <div class="col-lg-12 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
 
-            <form method="post" action="" class="php-email-form">
+            <form method="post" action="forms/forgot_password_con.php" class="php-email-form">
               <div class="row">
               </div>
               <div class="form-group mt-3">
