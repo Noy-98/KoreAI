@@ -92,7 +92,7 @@ session_start(); // Start the session
                 <input type="email" class="form-control" name="email" placeholder="Email" required>
               </div>
               <div class="form-group mt-3 pass">
-                <input type="password" class="form-control" name="password" placeholder="Password" required>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
                 <i class="bi bi-eye-slash" id="togglePassword1"></i>
               </div>
               <div class="my-3">
@@ -191,7 +191,6 @@ session_start(); // Start the session
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

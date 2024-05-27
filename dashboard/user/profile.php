@@ -259,7 +259,6 @@ $db_con->close();
                                                 <label class="form-control-label" for="input-password">New Password</label>
                                                 <div class="password-wrapper">
                                                     <input type="password" name="password" class="form-control form-control-alternative" placeholder="New Password" required>
-                                                    <i class="bi bi-eye-slash" id="togglePassword1"></i>
                                                 </div>
                                             </div>
                                         </div>
@@ -268,7 +267,6 @@ $db_con->close();
                                                 <label class="form-control-label" for="input-confirm-password">Confirm Password</label>
                                                 <div class="password-wrapper">
                                                     <input type="password" name="confirm_password" class="form-control form-control-alternative" placeholder="Confirm Password" required>
-                                                    <i class="bi bi-eye-slash" id="togglePassword2"></i>
                                                 </div>
                                             </div>
                                         </div>
