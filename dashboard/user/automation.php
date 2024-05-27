@@ -1,3 +1,21 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'user') {
+	header('Location: ../../login.php');
+	exit();
+}
+require_once __DIR__ . '/../../forms/db_con.php'; // Adjust the path if necessary
+
+// Fetch user data from the database
+$user_id = $_SESSION['user_id'];
+$sql = "SELECT profile_picture FROM users WHERE id = ?";
+$stmt = $db_con->prepare($sql);
+$stmt->bind_param("i", $user_id);
+$stmt->execute();
+$result = $stmt->get_result();
+$user_data = $result->fetch_assoc();
+$stmt->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +70,7 @@
 		</ul>
 		<ul class="side-menu">
 			<li>
-				<a href="#" class="logout">
+				<a href="../../forms/logout_con.php" class="logout">
 					<i class='bx bxs-log-out-circle' ></i>
 					<span class="text">Logout</span>
 				</a>
@@ -78,7 +96,7 @@
 			<input type="checkbox" id="switch-mode" hidden>
 			<label for="switch-mode" class="switch-mode"></label>
 			<a href="../user/profile.php" class="profile">
-				<img src="../../assets/img/profile_icon.png">
+				<img src="<?php echo htmlspecialchars($user_data['profile_picture']); ?>">
 			</a>
 		</nav>
 		<!-- NAVBAR -->
@@ -98,6 +116,27 @@
 						</li>
 					</ul>
 				</div>
+			</div>
+
+            <div class="message">
+				<!-- Validation message section -->
+				<?php
+				if (session_status() == PHP_SESSION_NONE) {
+					session_start(); // Start the session if it hasn't started
+				}
+
+				// Display error messages
+				if (isset($_SESSION['error'])) {
+					echo '<div class="error_message">' . $_SESSION['error'] . '</div>';
+					unset($_SESSION['error']); // Clear the error message
+				}
+
+				// Display success messages
+				if (isset($_SESSION['success'])) {
+					echo '<div class="success_message">' . $_SESSION['success'] . '</div>';
+					unset($_SESSION['success']); // Clear the success message
+				}
+				?>
 			</div>
 
              <!-- Page content -->
@@ -121,18 +160,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="../../assets/img/tusok_icon.png">
-                                    </td>
-                                    <td>User Color Code</td>
-                                    <td>Product Name</td>
-                                    <td>Product Price</td>
-                                    <td>Product Pcs</td>
-                                    <td>Product Color Code</td>
-                                    <td>Total Price</td>
-                                    <td><a href=""><span class="status pending">Delete</span></a></td>
-                                </tr>
+								<?php include '../../forms/user_automation.php'; ?>
                             </tbody>
                         </table>
                     </div>

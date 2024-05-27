@@ -18,7 +18,7 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
                 <td>
-                    <img src='".htmlspecialchars($row['profile_picture'])."' alt='Profile Picture'>
+                    <img src='".htmlspecialchars($row['profile_picture'])."'>
                     <p>".htmlspecialchars($row['username'])."</p>
                 </td>
                 <td>".htmlspecialchars($row['first_name'])."</td>

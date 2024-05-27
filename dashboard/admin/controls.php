@@ -91,7 +91,7 @@ $stmt->close();
 			<input type="checkbox" id="switch-mode" hidden>
 			<label for="switch-mode" class="switch-mode"></label>
 			<a href="../admin/profile.php" class="profile">
-				<img src="<?php echo htmlspecialchars($user_data['profile_picture']); ?>" alt="Profile Picture">
+				<img src="<?php echo htmlspecialchars($user_data['profile_picture']); ?>">
 			</a>
 		</nav>
 		<!-- NAVBAR -->
