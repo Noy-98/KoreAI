@@ -14,12 +14,12 @@ if (isset($_GET['user_id'])) {
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>TusokTracker</title>
+  <title>KoreAI</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/tusok_icon.png" rel="icon">
+  <link href="assets/img/main_logo.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -44,7 +44,7 @@ if (isset($_GET['user_id'])) {
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html"><span>TusokTracker</span></a></h1>
+        <h1><a href="index.html"><span>KoreAI</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -135,12 +135,12 @@ if (isset($_GET['user_id'])) {
 
         <div class="col-lg-4 col-md-6">
           <div class="footer-info">
-            <h3>TusokTracker</h3>
-            <p class="pb-3"><em>an Automated Street Food Pricing System</em></p>
+            <h3>KoreAI</h3>
+            <p class="pb-3"><em>an Automated Food Pricing and Inventory System</em></p>
             <p>
               Pateros City, Philippines<br><br>
               <strong>Phone:</strong> +63 9111111111<br>
-              <strong>Email:</strong> tusoktracker@gmail.com<br>
+              <strong>Email:</strong> koreai@gmail.com<br>
             </p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -163,15 +163,15 @@ if (isset($_GET['user_id'])) {
         <div class="col-lg-2 col-md-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Dynamic Pricing Management</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Inventory Tracking and Management</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Sales Analytics and Reporting</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Object Recognition System</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Real-Time Calculation & Pricing Integration</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Effeciency</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-6 footer-newsletter">
           <h4>Our Newsletter</h4>
-          <p>Send a newsletter at TusokTracker to receive the latest updates.</p>
+          <p>Send a newsletter at KoreAI to receive the latest updates.</p>
           <form action="" method="post">
             <input type="email" name="email"><input type="submit" value="Subscribe">
           </form>
