@@ -27,7 +27,7 @@ $db_con->close();
     <!-- Favicons -->
     <link href="../../assets/img/main_logo.png" rel="icon">
 
-    <title>KoreAI</title>
+    <title>A-CHOO'S KOREAN STORE</title>
 
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
@@ -89,7 +89,7 @@ $db_con->close();
 		<!-- NAVBAR -->
 		<nav>
 			<i class='bx bx-menu' ></i>
-			<a href="#" class="nav-link">KoreAI</a>
+			<a href="#" class="nav-link">A-CHOO'S KOREAN STORE</a>
 			<form action="#">
 				<div class="form-input">
 					<input type="search" placeholder="Search...">

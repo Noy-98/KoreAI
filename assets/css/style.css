@@ -411,7 +411,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(2, 5, 161, 0.91);
+  background: #FFB0B0;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -617,7 +617,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background-color: #fafaff;
+  background-color: #FFB0B0;
   min-height: 40px;
   margin-top: 80px;
 }

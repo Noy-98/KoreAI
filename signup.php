@@ -8,7 +8,7 @@ session_start(); // Start the session
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>KoreAI</title>
+  <title>A-CHOO'S KOREAN STORE</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -38,13 +38,13 @@ session_start(); // Start the session
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html"><span>KoreAI</span></a></h1>
+        <h1><a href="index.php"><span>A-CHOO'S KOREAN STORE</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.php#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.php#about">About</a></li>
           <li class="dropdown"><a href="#"><span>Portal</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="login.php">Login</a></li>
@@ -68,7 +68,7 @@ session_start(); // Start the session
         <div class="d-flex justify-content-between align-items-center">
           <h2>Signup Page</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li>Signup Page</li>
           </ol>
         </div>
@@ -138,12 +138,12 @@ session_start(); // Start the session
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>KoreAI</h3>
+              <h3>A-CHOO'S KOREAN STORE</h3>
               <p class="pb-3"><em>an Automated Food Pricing and Inventory System</em></p>
               <p>
                 Pateros City, Philippines<br><br>
                 <strong>Phone:</strong> +63 9111111111<br>
-                <strong>Email:</strong> koreai@gmail.com<br>
+                <strong>Email:</strong> achoos@gmail.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -158,8 +158,8 @@ session_start(); // Start the session
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.php#about">About us</a></li>
             </ul>
           </div>
 
@@ -174,7 +174,7 @@ session_start(); // Start the session
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Send a newsletter at KoreAI to receive the latest updates.</p>
+            <p>Send a newsletter at A-CHOO'S KOREAN STORE to receive the latest updates.</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -187,7 +187,7 @@ session_start(); // Start the session
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>KoreAI</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>A-CHOO'S KOREAN STORE</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->

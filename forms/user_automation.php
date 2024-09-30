@@ -11,7 +11,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['user_type'] !== 'user') {
 }
 
 // Fetch user data from the database
-$sql = "SELECT id, p_picture, user_color_code, p_name, p_price, p_pcs, p_color_code, total_price FROM tusok_list";
+$sql = "SELECT id, p_picture, p_name, p_price, p_pcs, p_qr_code, total_price FROM tusok_list";
 $result = $db_con->query($sql);
 
 if ($result->num_rows > 0) {
@@ -20,11 +20,10 @@ if ($result->num_rows > 0) {
                 <td>
                     <img src='".htmlspecialchars($row['p_picture'])."'>
                 </td>
-                <td>".htmlspecialchars($row['user_color_code'])."</td>
                 <td>".htmlspecialchars($row['p_name'])."</td>
                 <td>".htmlspecialchars($row['p_price'])."</td>
                 <td>".htmlspecialchars($row['p_pcs'])."</td>
-                <td>".htmlspecialchars($row['p_color_code'])."</td>
+                <td>".htmlspecialchars($row['p_qr_code'])."</td>
                 <td>".htmlspecialchars($row['total_price'])."</td>
                 <td>
                     <a href='../../forms/user_delete_automation.php?id=".urlencode($row['id'])."' onclick='return confirm(\"Are you sure you want to delete this list?\");'>

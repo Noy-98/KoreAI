@@ -1,3 +1,6 @@
+<?php
+session_start(); // Start the session
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +8,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>KoreAI</title>
+  <title>A-CHOO'S KOREAN STORE</title>
   <!--Automated Street Food Pricing System-->
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -37,7 +40,7 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html"><span>KoreAI</span></a></h1>
+        <h1><a href="index.php"><span>A-CHOO'S KOREAN STORE</span></a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
@@ -65,7 +68,7 @@
       <div class="row justify-content-between">
         <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
           <div data-aos="zoom-out">
-            <h1>Kore<span>AI</span></h1>
+            <h1>A-CHOO'S KOREAN STORE</h1>
             <h2>an Automated Food Pricing and Inventory System</h2>
             <div class="text-center text-lg-start">
               <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -105,7 +108,7 @@
           <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right"></div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-            <h3>About KoreAI</h3>
+            <h3>About A-CHOO'S KOREAN STORE</h3>
             <p> An A.I.-based Automated Food Pricing and Inventory System for Korean stores that will allow retailers to increase their overall experience with consumers.</p>
 
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
@@ -142,12 +145,12 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>KoreAI</h3>
+              <h3>A-CHOO'S KOREAN STORE</h3>
               <p class="pb-3"><em>an Automated Food Pricing and Inventory System</em></p>
               <p>
                 Pateros City, Philippines<br><br>
                 <strong>Phone:</strong> +63 9111111111<br>
-                <strong>Email:</strong> koreai@gmail.com<br>
+                <strong>Email:</strong> achoos@gmail.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -178,7 +181,7 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Send a newsletter at KoreAI to receive the latest updates.</p>
+            <p>Send a newsletter at A-CHOO'S KOREAN STORE to receive the latest updates.</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -191,7 +194,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>KoreAI</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>A-CHOO'S KOREAN STORE</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->

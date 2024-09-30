@@ -669,3 +669,7 @@ textarea[resize='horizontal'] {
   cursor: pointer;
   color: #1acc8d;
 }
+
+.custom{
+  margin-top: 20px;
+}

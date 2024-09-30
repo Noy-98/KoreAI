@@ -57,7 +57,7 @@ body {
 	left: 0;
 	width: 280px;
 	height: 100%;
-	background: var(--light);
+	background: #FFB0B0;
 	z-index: 2000;
 	font-family: var(--lato);
 	transition: .3s ease;
@@ -80,7 +80,7 @@ body {
 	position: sticky;
 	top: 0;
 	left: 0;
-	background: var(--light);
+	background: #FFB0B0;
 	z-index: 500;
 	padding-bottom: 20px;
 	box-sizing: content-box;
@@ -181,7 +181,7 @@ body {
 /* NAVBAR */
 #content nav {
 	height: 56px;
-	background: var(--light);
+	background: #010351;
 	padding: 0 24px;
 	display: flex;
 	align-items: center;
@@ -203,7 +203,7 @@ body {
 	box-shadow: -20px -20px 0 var(--light);
 }
 #content nav a {
-	color: var(--dark);
+	color: #fafafa;
 }
 #content nav .bx.bx-menu {
 	cursor: pointer;

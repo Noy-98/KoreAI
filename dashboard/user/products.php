@@ -25,7 +25,7 @@ $stmt->close();
     <!-- Favicons -->
     <link href="../../assets/img/main_logo.png" rel="icon">
 
-    <title>KoreAI</title>
+    <title>A-CHOO'S KOREAN STORE</title>
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
@@ -85,7 +85,7 @@ $stmt->close();
 		<!-- NAVBAR -->
 		<nav>
 			<i class='bx bx-menu' ></i>
-			<a href="#" class="nav-link">KoreAI</a>
+			<a href="#" class="nav-link">A-CHOO'S KOREAN STORE</a>
 			<form action="#">
 				<div class="form-input">
 					<input type="search" placeholder="Search...">
@@ -152,7 +152,7 @@ $stmt->close();
                                     <th>Product Name</th>
                                     <th>Product Price</th>
                                     <th>Product Pcs</th>
-                                    <th>Product Color Code</th>
+                                    <th>Product QR Code</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -207,13 +207,6 @@ $stmt->close();
                                                 <label class="form-control-label">Product Pcs</label>
                                                 <input type="number" name="product_pcs"
                                                     class="form-control form-control-alternative" placeholder="Product Pcs" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group focused">
-                                                <label class="form-control-label">Product Color Code</label>
-                                                <input type="text" name="product_color_code"
-                                                    class="form-control form-control-alternative" placeholder="Product Color Code" required>
                                             </div>
                                         </div>
                                     </div>
